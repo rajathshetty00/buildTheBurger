@@ -16,11 +16,18 @@ const Burger = props => {
 
   if (transformedIngredients.length === 0) {
     transformedIngredients = (
-      <p style={{ textAlign: "center" }}>Please enter Ingredients</p>
+      <p style={{ textAlign: "center", margin: "0" }}>
+        Please enter Ingredients
+      </p>
     );
   }
 
-  console.log(transformedIngredients);
+  // console.log(
+  //   Object.keys(props.ingredients).map(item => {
+  //     return [...Array(props.ingredients.item)];
+  //   })
+  // );
+  // console.log(transformedIngredients);
 
   return (
     <div className="Burger">
